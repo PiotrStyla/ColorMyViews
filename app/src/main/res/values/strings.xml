@@ -10,4 +10,8 @@
     <string name="button_red">RED</string>
     <string name="button_yellow">YELLOW</string>
     <string name="button_green">GREEN</string>
+    <string name="box_six">BOX SIX</string>
+    <string name="box_seven">BOX SEVEN</string>
+    <string name="box_eight">BOX EIGHT</string>
+    <string name="box_nine">BOX NINE</string>
 </resources>

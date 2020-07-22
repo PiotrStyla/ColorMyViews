@@ -23,9 +23,13 @@ class MainActivity : AppCompatActivity() {
             R.id.box_three_text -> view.setBackgroundColor(Color.BLUE)
             R.id.box_four_text -> view.setBackgroundColor(Color.YELLOW)
             R.id.box_five_text -> view.setBackgroundColor(Color.CYAN)
-            R.id.red_button -> box_three_text.setBackgroundResource(R.color.my_red)
-            R.id.yellow_button -> box_four_text.setBackgroundResource(R.color.my_yellow)
-            R.id.green_button -> box_five_text.setBackgroundResource(R.color.my_green)
+
+            R.id.textView17 -> view.setBackgroundColor(Color.BLACK)
+            R.id.textView15 -> view.setBackgroundColor(Color.CYAN)
+            R.id.textView18 -> view.setBackgroundColor(Color.BLUE)
+            R.id.textView16 -> view.setBackgroundColor(Color.YELLOW)
+
+
 
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
@@ -41,14 +45,17 @@ class MainActivity : AppCompatActivity() {
 
         val rootConstraintLayout = findViewById<View>(R.id.constraint_layout)
 
-        val redButton = findViewById<TextView>(R.id.red_button)
-        val greenButton = findViewById<TextView>(R.id.green_button)
-        val yellowButton = findViewById<TextView>(R.id.yellow_button)
+        val boxSixText = findViewById<TextView>(R.id.textView17)
+        val boxSevenText = findViewById<TextView>(R.id.textView15)
+        val boxEightText = findViewById<TextView>(R.id.textView18)
+        val boxNineText = findViewById<TextView>(R.id.textView16)
+
+
 
         val clickableViews: List<View> =
             listOf(boxOneText, boxTwoText, boxThreeText,
                 boxFourText, boxFiveText, rootConstraintLayout,
-                redButton, greenButton, yellowButton
+                boxSixText, boxSevenText, boxEightText,boxNineText
             )
 
         for (item in clickableViews) {
